@@ -133,8 +133,9 @@ body {
     text-align: justify;
 }
 .profile-page .btn-box{
-    background: red;
-    
+    /* background: red; */
+    margin-top: 1.2rem;
+
 }
 .btn{
     display: inline-flex;
@@ -150,4 +151,28 @@ body {
     font-size: 1rem;
     color: var(--white-color);
     margin: 0 1rem;
+    transition: .5s;
+}
+
+
+.btn-box .btn:nth-child(1){
+    background: transparent;
+    color: rgb(0, 174, 255);
+}
+.btn-box .btn:nth-child(1):hover{
+    background: rgb(0, 174, 255);
+    color: var(--white-color);
+}
+
+.btn-box .btn:nth-child(2){
+    background: transparent;
+    color: rgb(0, 174, 255);
+}
+.btn-box .btn:nth-child(2):hover{
+    background: rgb(0, 174, 255);
+    color: var(--white-color);
+}
+.book-page .page-right{
+    position: absolute;
+    right: 180;
 }
