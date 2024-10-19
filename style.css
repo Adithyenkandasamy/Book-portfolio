@@ -180,20 +180,22 @@ body {
     box-shadow: 0 0 .6rem rgba(0, 0, 0, .1);
     display: flex;
     padding: 2rem;
-  }
-  
-  .page-left {
-    left: 0; /* Position the homepage to the left */
-  }
-  
-  .page-right {
-    right: 0; /* Position the profile page to the right */
-  }
-  
-  .page-back {
-    right: 50%; /* Position the work experience page on the right */
+}
+
+.page-back {
+    right: 50%; /* Position the education page correctly */
     transform: translateX(50%); /* Center it correctly */
-  }
+    display: none; /* Initially hide the education page */
+}
+
+.page-right.turn .page-back {
+    display: flex; /* Show the education page when turning */
+}
+
+.page-right.turn .page-front {
+    display: none; /* Hide the work experience page when turning */
+}
+
 .book-page .page-front,
 .book-page .page-back {
    position: absolute;
